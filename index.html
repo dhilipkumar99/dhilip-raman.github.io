@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+    <link rel="stylesheet" href="dep/normalize.css/normalize.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: linear-gradient(135deg, #f06, #48f);
+            background: linear-gradient(135deg, #f06, #48f);
             color: #333;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 40px auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3 {
             color: #333;
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
         }
         .job {
             background: #fff;
@@ -35,15 +45,21 @@
             padding: 0;
         }
         .job ul li {
-            background: url('bullet.png') no-repeat left center;
             padding-left: 20px;
             margin-bottom: 10px;
+            position: relative;
+        }
+        .job ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #f06;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>My Resume</h1>
+        <h1>Dhilip Raman</h1>
         
         <div class="job">
             <h2>Center for Neurogenomics and Clinical Research (CNCR)</h2>
